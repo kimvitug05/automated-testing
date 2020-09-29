@@ -15,7 +15,8 @@ class Deck
   end
 
   def draw
-
+    card = @card.pop
+    return card
   end
 
   def shuffle

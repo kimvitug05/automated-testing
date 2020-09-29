@@ -19,5 +19,11 @@ describe Deck do
     it 'returns a Card' do
       expect(@deck.draw).must_be_instance_of Card
     end
+
+    it 'draws 52 cards from an initial deck' do
+      52.times do
+        expect(@deck.draw).must_be_instance_of Card
+      end
+    end
   end
 end
