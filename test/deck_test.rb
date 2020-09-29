@@ -15,5 +15,9 @@ describe Deck do
     it "must respond to draw method" do
       expect(@deck).must_respond_to :draw
     end
+
+    it 'returns a Card' do
+      expect(@deck.draw).must_be_instance_of Card
+    end
   end
 end
