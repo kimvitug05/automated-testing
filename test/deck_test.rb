@@ -1,9 +1,12 @@
 require_relative 'test_helper'
 
 describe Deck do
-  # Write tests for the Deck class.
-  # What should you test?
-    # 1.  Expected Behavior
-    # 2.  Edge cases
-
+  describe "constructor" do
+    before do
+      @deck = Deck.new
+    end
+    it "can create a new Deck" do
+      expect(@deck).must_be_instance_of Deck
+    end
+  end
 end

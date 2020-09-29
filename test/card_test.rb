@@ -74,8 +74,6 @@ describe Card do
           expect(card.suit).must_equal suit
         end
       end
-
     end
   end
-
 end
