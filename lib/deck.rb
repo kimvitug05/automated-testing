@@ -6,11 +6,16 @@ require_relative 'card'
 class Deck
 
   def initialize
-
+    @card = []
+    [:hearts, :spades, :clubs, :diamonds].each do |suit|
+      (1..13).each do |value|
+        @card << Card.new(value, suit)
+      end
+    end
   end
 
   def draw
-    # returns a card
+
   end
 
   def shuffle
