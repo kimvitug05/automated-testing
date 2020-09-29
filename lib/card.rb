@@ -1,4 +1,5 @@
 VALID_SUITS = [:hearts, :spades, :clubs, :diamonds]
+FACE_CARDS = { 1 => "Ace", 11 => "Jack", 12 => "Queen", 13 => "King" }
 
 
 class Card
@@ -13,6 +14,10 @@ class Card
   end
 
   def to_s
+    if FACE_CARDS.key? @value
+      @value = FACE_CARDS[value]
+    end
+
     return "#{value} of #{suit.to_s}"
   end
 end
