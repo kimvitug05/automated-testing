@@ -40,4 +40,16 @@ describe Deck do
       expect(@deck).must_respond_to :shuffle
     end
   end
+
+  describe "count" do
+    it 'returns the number of cards in the Deck' do
+      expect(@deck.count).must_equal 52
+
+      11.times do
+        @deck.draw
+      end
+
+      expect(@deck.count).must_equal 41
+    end
+  end
 end
