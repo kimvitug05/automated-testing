@@ -20,6 +20,6 @@ class Deck
   end
 
   def shuffle
-    # shuffles the deck
+    @card.shuffle
   end
 end

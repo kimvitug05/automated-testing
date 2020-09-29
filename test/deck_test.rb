@@ -39,6 +39,5 @@ describe Deck do
     it 'responds to shuffle' do
       expect(@deck).must_respond_to :shuffle
     end
-
   end
 end
