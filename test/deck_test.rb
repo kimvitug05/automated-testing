@@ -25,5 +25,13 @@ describe Deck do
         expect(@deck.draw).must_be_instance_of Card
       end
     end
+
+    it 'will return nil for drawing an empty Deck' do
+      52.times do
+        expect(@deck.draw).must_be_instance_of Card
+      end
+
+      expect(@deck.draw).must_be_nil
+    end
   end
 end
